@@ -36,7 +36,12 @@ const Navbar = () => {
         >
           Knowledge Libray
         </Link>
-        <Link className="py-2 d-none d-md-inline-block" to="pages/faq">
+        <Link
+          className={`py-2 d-none d-md-inline-block ${
+            currentRoute === "/pages/faq" && "active"
+          }`}
+          to="pages/faq"
+        >
           FAQ
         </Link>
         <Link className="py-2 d-none d-md-inline-block" to="pages/templates">
