@@ -5,7 +5,7 @@ const Accordion = (props) => {
     <React.Fragment>
       <div className="accordion accordion-flush">
         {props.accordionItems.map((item, index) => (
-          <div key={index} className="accordion-item">
+          <div key={index} className="accordion-item" id="accordionFlush">
             <h2 className="accordion-header" id={`flush-heading${index}`}>
               <button
                 className="accordion-button collapsed"
