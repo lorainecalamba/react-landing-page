@@ -1,30 +1,26 @@
-import React from 'react';
-import SECLogo from '../../assets/img/sec.png';
-import BottomWaves from '../UI/BottomWaves';
-import TopWaves from '../UI/TopWaves';
+import React from "react";
+import SECLogo from "../../assets/img/sec.png";
+import BottomWaves from "../UI/BottomWaves";
+import TopWaves from "../UI/TopWaves";
 
 const AboutEdgar = () => {
   return (
     <React.Fragment>
-      <TopWaves/>
+      <TopWaves />
       <div id="edgar-description">
-        <div class="container">
-          <div class="row">
+        <div className="container">
+          <div className="row">
             <div
-              class="col-md-6 col-sm-12 text-center"
+              className="col-md-6 col-sm-12 text-center"
               id="edgar-description__image"
             >
-              <img
-                src={SECLogo}
-                class="img-fluid"
-                alt="SEC Logo"
-              />
+              <img src={SECLogo} className="img-fluid" alt="SEC Logo" />
             </div>
             <div
-              class="col-md-6 col-sm-12 text-white"
+              className="col-md-6 col-sm-12 text-white"
               id="edgar-description__contents"
             >
-              <h4 class="display-6 fw-bold">EDGAR</h4>
+              <h4 className="display-6 fw-bold">EDGAR</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestiae dicta iure quisquam fugit ipsum obcaecati neque
@@ -40,7 +36,7 @@ const AboutEdgar = () => {
       </div>
       <BottomWaves />
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default AboutEdgar
+export default AboutEdgar;
