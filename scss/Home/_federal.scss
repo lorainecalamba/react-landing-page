@@ -1,0 +1,14 @@
+@use '../custom'as *;
+
+#list-of-federal-holidays {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.8rem;
+}
+
+.current {
+  color: $primary;
+  font-weight: 900;
+  font-style: italic;
+  padding-left: 1.5rem;
+}

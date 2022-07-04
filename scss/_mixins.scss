@@ -1,0 +1,51 @@
+@use './custom'as *;
+
+@mixin list-style {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      padding-bottom: 0.56rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    li:before {
+      content: '>';
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+@mixin zoom-in-zoom-out {
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(2, 2);
+    }
+
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+
+    100% {
+      transform: scale(2, 2);
+    }
+  }
+}
+
+@mixin rotate {
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+}

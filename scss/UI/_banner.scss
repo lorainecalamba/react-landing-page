@@ -1,0 +1,29 @@
+@use '../custom'as *;
+@use '../mixins'as *;
+
+#banner {
+  background: $primary;
+  padding: 5rem 0;
+  height: 32rem;
+
+  img {
+    padding: 4rem 0;
+    width: 20rem;
+    margin: 0 auto;
+    animation: zoom-in-zoom-out 3s ease infinite;
+
+    @keyframes zoom-in-zoom-out {
+      0% {
+        transform: scale(1, 1);
+      }
+
+      50% {
+        transform: scale(1.5, 1.5);
+      }
+
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}

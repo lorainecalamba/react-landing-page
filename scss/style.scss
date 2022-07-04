@@ -1,0 +1,13 @@
+@use "./custom";
+
+// * UI scss
+@use "./UI/typography";
+@use "./UI/navbar";
+@use "./UI/banner";
+@use "./UI/photoCard";
+@use "./UI/footer";
+
+// * HOME scss
+@use "./Home/federal";
+@use "./Home/aboutEdgar";
+@use "./Home/minitime";

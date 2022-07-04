@@ -1,0 +1,31 @@
+@use '../custom'as*;
+
+.site-header {
+  nav {
+
+    a {
+      color: $white;
+      text-decoration: none;
+      position: relative;
+
+      &:hover {
+        font-weight: 500;
+        border-bottom: 0.15rem solid $white;
+      }
+
+      img {
+        width: 1.5rem;
+
+        @include media-breakpoint-down(sm) {
+          text-align: center;
+          left: 50%;
+        }
+      }
+
+    }
+
+    .active {
+      border-bottom: 0.15rem solid $white;
+    }
+  }
+}
