@@ -60,7 +60,12 @@ const Navbar = () => {
         >
           Codes
         </Link>
-        <Link className="py-2 d-none d-md-inline-block" to="pages/projects">
+        <Link
+          className={`py-2 d-none d-md-inline-block ${
+            currentRoute === "/pages/projects" && "active"
+          }`}
+          to="pages/projects"
+        >
           Projects
         </Link>
       </nav>

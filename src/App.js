@@ -13,6 +13,8 @@ import KnowledgeLibrary from './pages/KnowledgeLibrary';
 import Faq from './pages/Faq';
 import Templates from './pages/Templates';
 import Codes from './pages/Codes';
+import Project from './pages/Project';
+
 
 // * import css
 import './assets/css/style.css';
@@ -31,6 +33,7 @@ const App = () => {
           <Route path="/pages/faq" element={<Faq />}></Route>
           <Route path="/pages/templates" element={<Templates />}></Route>
           <Route path="/pages/codes" element={<Codes />}></Route>
+          <Route path="/pages/projects" element={<Project />}></Route>
         </Routes>
 
         <Footer />
