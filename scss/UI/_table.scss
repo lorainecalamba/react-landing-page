@@ -1,0 +1,25 @@
+@use '../custom'as*;
+
+.datatable {
+
+  a {
+    text-decoration: none;
+
+    i {
+      padding-right: 0.8rem;
+    }
+  }
+
+  .fa-file-pdf {
+    color: $danger;
+  }
+
+  .fa-file-word {
+    color: $blue;
+  }
+
+  .fa-file-excel {
+    color: $green;
+  }
+
+}

@@ -4,7 +4,7 @@ const Table = (props) => {
   let columnWidth = 100 / props.tableHeaders.length;
 
   return (
-    <table className="table table-striped table-hover">
+    <table className="table table-striped table-hover datatable">
       <thead>
         <tr>
           {props.tableHeaders.map((theader, index) => (

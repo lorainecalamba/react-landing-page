@@ -10804,6 +10804,22 @@ textarea.form-control-lg {
   height: 30rem;
 }
 
+.datatable a {
+  text-decoration: none;
+}
+.datatable a i {
+  padding-right: 0.8rem;
+}
+.datatable .fa-file-pdf {
+  color: #dc3545;
+}
+.datatable .fa-file-word {
+  color: #0d6efd;
+}
+.datatable .fa-file-excel {
+  color: #198754;
+}
+
 #footer a {
   color: #fff !important;
   text-decoration: none;

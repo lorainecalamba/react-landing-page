@@ -3,9 +3,9 @@ import React from "react";
 const Accordion = (props) => {
   return (
     <React.Fragment>
-      <div className="accordion accordion-flush">
+      <div className="accordion accordion-flush" id="accordionFlush">
         {props.accordionItems.map((item, index) => (
-          <div key={index} className="accordion-item" id="accordionFlush">
+          <div key={index} className="accordion-item">
             <h2 className="accordion-header" id={`flush-heading${index}`}>
               <button
                 className="accordion-button collapsed"
