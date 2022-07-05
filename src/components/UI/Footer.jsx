@@ -31,7 +31,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="link-secondary" to="timezone.html">
+                <Link className="link-secondary" to="pages/timezone">
                   Custom Timezones
                 </Link>
               </li>

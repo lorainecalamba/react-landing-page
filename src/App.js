@@ -15,6 +15,7 @@ import Templates from './pages/Templates';
 import Codes from './pages/Codes';
 import Project from './pages/Project';
 import FormType from './pages/FormType';
+import TimeZone from './pages/TimeZone';
 
 // * import css
 import './assets/css/style.css';
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/pages/codes" element={<Codes />}></Route>
           <Route path="/pages/projects" element={<Project />}></Route>
           <Route path="/pages/formtype" element={<FormType />}></Route>
+          <Route path="/pages/timezone" element={<TimeZone />}></Route>
         </Routes>
 
         <Footer />
