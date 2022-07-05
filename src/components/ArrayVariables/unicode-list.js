@@ -886,7 +886,7 @@ export const unicodeList = [
   { character: '&#11035;', decimalCode: '&amp;#11035;', name: 'Black large square', characterSet: 'Wingdings' },
   { character: '&#11036;', decimalCode: '&amp;#11036;', name: 'White large square', characterSet: 'Wingdings' },
   { character: '&#11093;', decimalCode: '&amp;#11093;', name: 'Heavy large circle', characterSet: 'Wingdings' },
-  { character: '&#63743;', decimalCode: '&amp;#63743;', name: 'Apple logo', characterSet: 'Macroman', characterSet: '' },
+  { character: '&#63743;', decimalCode: '&amp;#63743;', name: 'Apple logo', characterSet: 'Macroman' },
   { character: '&#64257;', decimalCode: '&amp;#64257;', name: 'Latin small ligature fi', characterSet: 'WGL4' },
   { character: '&#64258;', decimalCode: '&amp;#64258;', name: 'Latin small ligature fl', characterSet: 'WGL4' },
   { character: '&#127765;', decimalCode: '&amp;#127765;', name: 'Full moon symbol', characterSet: 'Wingdings' },
