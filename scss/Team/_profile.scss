@@ -1,0 +1,29 @@
+.profile-card {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 4rem;
+
+  &:hover {
+    -ms-transform: skewY(5deg);
+    transform: skewY(5deg);
+    transition: all 0.25s linear;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  &__photo {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+}

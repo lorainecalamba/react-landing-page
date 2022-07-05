@@ -61,7 +61,7 @@ const Footer = () => {
             <h5 className="fw-bold">Fast Links</h5>
             <ul className="list-unstyled text-small">
               <li>
-                <Link className="link-secondary" to="./team.html">
+                <Link className="link-secondary" to="pages/team">
                   Team
                 </Link>
               </li>
