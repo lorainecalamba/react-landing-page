@@ -50,7 +50,7 @@ const Templates = () => {
   ));
 
   const copyCodesContents = copyCodesList.map((code, index) => (
-    <tr>
+    <tr key={index}>
       <td>
         <FontAwesomeIcon icon={faFileCode} style={{ color: "#F66B0E" }} />
         <Link to={code.location}> &nbsp;{code.name}</Link>
@@ -59,7 +59,7 @@ const Templates = () => {
   ));
 
   const proceduresContents = proceduresList.map((procedure, index) => (
-    <tr>
+    <tr key={index}>
       <td>
         {procedure.type === "pdf" && <FontAwesomeIcon icon={faFilePdf} />}
         {procedure.type === "word" && <FontAwesomeIcon icon={faFileWord} />}

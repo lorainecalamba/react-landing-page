@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 // * import components
 import Navbar from './components/UI/Navbar';
@@ -11,8 +12,11 @@ import Updates from './pages/Updates';
 import KnowledgeLibrary from './pages/KnowledgeLibrary';
 import Faq from './pages/Faq';
 import Templates from './pages/Templates';
+import Codes from './pages/Codes';
 
+// * import css
 import './assets/css/style.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
@@ -26,10 +30,25 @@ const App = () => {
           <Route path="/pages/knowledge" element={<KnowledgeLibrary />}></Route>
           <Route path="/pages/faq" element={<Faq />}></Route>
           <Route path="/pages/templates" element={<Templates />}></Route>
+          <Route path="/pages/codes" element={<Codes />}></Route>
         </Routes>
 
         <Footer />
       </BrowserRouter>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      {/* Same as */}
+      <ToastContainer />
     </React.Fragment>
   )
 }

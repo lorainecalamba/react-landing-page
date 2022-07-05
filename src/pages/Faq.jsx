@@ -2,6 +2,7 @@ import React from "react";
 
 // * components
 import Banner from "../components/UI/Banner";
+import ContainerBox from "../components/UI/ContainerBox";
 import Header from "../components/UI/Header";
 import Accordion from "../components/UI/Accordion";
 
@@ -21,11 +22,11 @@ const Faq = () => {
         alt="FAQ Page Banner"
       />
 
-      <div className="container mb-5">
+      <ContainerBox>
         <Header title="Frequently Ask Questions" />
 
         <Accordion accordionItems={faqList} />
-      </div>
+      </ContainerBox>
     </React.Fragment>
   );
 };
