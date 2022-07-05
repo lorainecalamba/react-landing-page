@@ -14,7 +14,7 @@ import Faq from './pages/Faq';
 import Templates from './pages/Templates';
 import Codes from './pages/Codes';
 import Project from './pages/Project';
-
+import FormType from './pages/FormType';
 
 // * import css
 import './assets/css/style.css';
@@ -34,6 +34,7 @@ const App = () => {
           <Route path="/pages/templates" element={<Templates />}></Route>
           <Route path="/pages/codes" element={<Codes />}></Route>
           <Route path="/pages/projects" element={<Project />}></Route>
+          <Route path="/pages/formtype" element={<FormType />}></Route>
         </Routes>
 
         <Footer />

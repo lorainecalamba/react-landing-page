@@ -1,6 +1,6 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import Dg3Logo from '../../assets/img/dg3.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import Dg3Logo from "../../assets/img/dg3.png";
 
 const Footer = () => {
   return (
@@ -16,46 +16,75 @@ const Footer = () => {
             <h5 className="fw-bold">Fast Links</h5>
             <ul className="list-unstyled text-small">
               <li>
-                <Link className="link-secondary" to="form-type.html"
-                  >Form Type Database</Link>
+                <Link className="link-secondary" to="pages/formtype">
+                  Form Type Database
+                </Link>
               </li>
-              <li><Link className="link-secondary" to="#">Job Assignment</Link></li>
-              <li><Link className="link-secondary" to="#">Remote Station</Link></li>
               <li>
-                <Link className="link-secondary" to="timezone.html"
-                  >Custom Timezones</Link
-                >
+                <Link className="link-secondary" to="#">
+                  Job Assignment
+                </Link>
+              </li>
+              <li>
+                <Link className="link-secondary" to="#">
+                  Remote Station
+                </Link>
+              </li>
+              <li>
+                <Link className="link-secondary" to="timezone.html">
+                  Custom Timezones
+                </Link>
               </li>
             </ul>
           </div>
           <div className="col-6 col-md">
             <h5 className="fw-bold">Fast Links</h5>
             <ul className="list-unstyled text-small">
-              <li><Link className="link-secondary" to="#">EDGAR Codes</Link></li>
-              <li><Link className="link-secondary" to="#">EDGAR Calls</Link></li>
-              <li><Link className="link-secondary" to="#">EDGAR Turnover</Link></li>
+              <li>
+                <Link className="link-secondary" to="#">
+                  EDGAR Codes
+                </Link>
+              </li>
+              <li>
+                <Link className="link-secondary" to="#">
+                  EDGAR Calls
+                </Link>
+              </li>
+              <li>
+                <Link className="link-secondary" to="#">
+                  EDGAR Turnover
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="col-6 col-md">
             <h5 className="fw-bold">Fast Links</h5>
             <ul className="list-unstyled text-small">
               <li>
-                <Link className="link-secondary" to="./team.html">Team</Link>
+                <Link className="link-secondary" to="./team.html">
+                  Team
+                </Link>
               </li>
-              <li><Link className="link-secondary" to="#">Portal 2</Link></li>
+              <li>
+                <Link className="link-secondary" to="#">
+                  Portal 2
+                </Link>
+              </li>
               <li>
                 <Link
                   className="link-secondary"
                   to="https://app.wdesk.com/home/"
                   target="_blank"
-                  >Workiva</Link>
+                >
+                  Workiva
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
