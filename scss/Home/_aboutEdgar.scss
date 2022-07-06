@@ -10,9 +10,9 @@
       width: 25rem;
       animation: rotation 25s infinite linear;
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         text-align: center;
-        width: 12rem;
+        width: 20rem;
       }
 
       @include rotate;

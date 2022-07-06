@@ -10732,6 +10732,7 @@ textarea.form-control-lg {
   position: relative;
 }
 .site-header nav a:hover {
+  color: #fff !important;
   font-weight: 500;
   border-bottom: 0.15rem solid #fff;
 }
@@ -10745,7 +10746,12 @@ textarea.form-control-lg {
   }
 }
 .site-header nav .active {
+  color: #fff !important;
   border-bottom: 0.15rem solid #fff;
+}
+
+.navbar-toggler {
+  color: #fff !important;
 }
 
 #banner {
@@ -10771,9 +10777,9 @@ textarea.form-control-lg {
   }
 }
 
-#right-photo-card__content,
-#left-photo-card__content {
-  margin-top: 5rem;
+#right-photo-card,
+#left-photo-card {
+  margin-bottom: 1.25rem;
 }
 #right-photo-card__content ul,
 #left-photo-card__content ul {
@@ -10793,15 +10799,28 @@ textarea.form-control-lg {
   content: ">";
   padding-right: 0.5rem;
 }
+@media (max-width: 991.98px) {
+  #right-photo-card__content,
+#left-photo-card__content {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
 #right-photo-card__image,
 #left-photo-card__image {
   text-align: center;
 }
 #right-photo-card__image img,
 #left-photo-card__image img {
-  padding: 4rem 0;
-  width: 30rem;
+  width: 35rem;
   height: 30rem;
+}
+@media (max-width: 991.98px) {
+  #right-photo-card__image img,
+#left-photo-card__image img {
+    width: 25rem;
+    height: 20rem;
+  }
 }
 
 .datatable a {
@@ -10852,10 +10871,10 @@ textarea.form-control-lg {
   width: 25rem;
   animation: rotation 25s infinite linear;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   #edgar-description__image img {
     text-align: center;
-    width: 12rem;
+    width: 20rem;
   }
 }
 @keyframes rotation {

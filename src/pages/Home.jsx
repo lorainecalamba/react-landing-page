@@ -14,6 +14,7 @@ import AboutEdgar from "../components/Home/AboutEdgar";
 import homeBanner from "../assets/img/online.png";
 import LinkPhotoImage from "../assets/img/links.png";
 import FederalPhotoImage from "../assets/img/federal.png";
+import ToolsPhotoImage from "../assets/img/tools.png";
 
 // * import array list
 import { federalLinksList } from "../components/ArrayVariables/federal-links";
@@ -56,7 +57,7 @@ const Home = () => {
 
         <LeftPhotoCard
           title="Tools"
-          photoImage={FederalPhotoImage}
+          photoImage={ToolsPhotoImage}
           alt="Federal Image"
         >
           <PhotoCardList arrayList={edgarToolsList} />
@@ -70,7 +71,10 @@ const Home = () => {
         <div className="row">
           <Header title="Time and Date" />
           {miniTimeZoneList.map((timezone, index) => (
-            <div className="col-md-4 text-center mt-5" key={index}>
+            <div
+              className="col-lg-4 col-md-6 col-sm-12 text-center mt-5"
+              key={index}
+            >
               <MiniTime src={timezone.src} title={timezone.title} />
             </div>
           ))}

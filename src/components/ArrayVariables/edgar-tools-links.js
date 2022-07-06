@@ -5,7 +5,7 @@ export const edgarToolsList = [
   },
   {
     name: 'Form Type Database',
-    location: '../pages/form-type.html',
+    location: 'pages/formtype',
   },
   {
     name: 'EDGAR Calendar',

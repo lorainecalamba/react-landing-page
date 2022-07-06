@@ -11,13 +11,13 @@ const AboutEdgar = () => {
         <div className="container">
           <div className="row">
             <div
-              className="col-md-6 col-sm-12 text-center"
+              className="col-lg-6 col-md-12 text-center"
               id="edgar-description__image"
             >
               <img src={SECLogo} className="img-fluid" alt="SEC Logo" />
             </div>
             <div
-              className="col-md-6 col-sm-12 text-white"
+              className="col-lg-6 col-md-12 text-white"
               id="edgar-description__contents"
             >
               <h4 className="display-6 fw-bold">EDGAR</h4>

@@ -3,18 +3,32 @@
 
 #right-photo-card,
 #left-photo-card {
+  margin-bottom: 1.25rem;
+
   &__content {
-    margin-top: 5rem;
     @include list-style;
+
+    @include media-breakpoint-down(lg) {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      width: 400px;
+      margin: 0 auto;
+    }
   }
 
   &__image {
     text-align: center;
 
     img {
-      padding: 4rem 0;
-      width: 30rem;
+      width: 35rem;
       height: 30rem;
+
+      @include media-breakpoint-down(lg) {
+        width: 25rem;
+        height: 20rem;
+      }
     }
   }
 }

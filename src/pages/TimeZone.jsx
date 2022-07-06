@@ -18,8 +18,9 @@ const TAB_NAMES = [
 ];
 
 let newArrayTabName = [];
-// trimme tab names for id in nav tab
-const TRIMMED_TAB_NAMES = TAB_NAMES.map((tabName) => {
+
+/* Looping through the array and splitting the string by space and pushing the first element of the array to the newArrayTabName. */
+TAB_NAMES.forEach((tabName) => {
   let trimmedNameArray = tabName.split(" ");
   newArrayTabName.push(trimmedNameArray[0]);
 });

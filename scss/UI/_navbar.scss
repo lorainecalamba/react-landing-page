@@ -9,6 +9,7 @@
       position: relative;
 
       &:hover {
+        color: $white !important;
         font-weight: 500;
         border-bottom: 0.15rem solid $white;
       }
@@ -25,7 +26,12 @@
     }
 
     .active {
+      color: $white !important;
       border-bottom: 0.15rem solid $white;
     }
   }
+}
+
+.navbar-toggler {
+  color: $white !important;
 }
