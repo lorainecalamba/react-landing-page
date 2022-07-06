@@ -9,17 +9,26 @@ import Table from "../components/UI/Table";
 // * ArrayVariables
 import { knowledgeLists } from "../components/ArrayVariables/knowledge-library-list";
 
+// * fontawesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFileCode,
+  faFilePdf,
+  faFileWord,
+  faFileExcel,
+} from "@fortawesome/free-regular-svg-icons";
+
 // * images
 import knowledgeBanner from "../assets/img/knowledge.png";
 
-const TABLE_HEADERS = ["Title", "Action"];
+const TABLE_HEADERS = ["Title"];
 const knowledge = knowledgeLists.map((list, index) => (
   <tr key={index}>
-    <td>{list.name}</td>
     <td>
-      <Link to="/" className="btn btn-outline-primary">
-        View
-      </Link>
+      {list.type === "pdf" && <FontAwesomeIcon icon={faFilePdf} />}
+      {list.type === "word" && <FontAwesomeIcon icon={faFileWord} />}
+      {list.type === "excel" && <FontAwesomeIcon icon={faFileExcel} />}
+      <Link to="/"> &nbsp;{list.name}</Link>
     </td>
   </tr>
 ));
