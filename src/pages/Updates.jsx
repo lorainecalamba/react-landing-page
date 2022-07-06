@@ -12,7 +12,6 @@ import updateBanner from "../assets/img/update.png";
 // * fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFileCode,
   faFilePdf,
   faFileWord,
   faFileExcel,

@@ -18,7 +18,7 @@ const Team = () => {
       <ContainerBox>
         <div className="row">
           {teamList.map((user, index) => (
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-4">
               <ProfileContainer name={user.name} userPhoto={AvatarPhoto} />
             </div>
           ))}
