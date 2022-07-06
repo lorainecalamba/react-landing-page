@@ -12,7 +12,7 @@ const Footer = () => {
             <small className="d-block mb-3 text-white">&copy; 2022-2023</small>
           </div>
 
-          <div className="col-md-6 col-sm-12">
+          <div className="col-md-6 col-sm-12 col-lg">
             <h5 className="fw-bold">Fast Links</h5>
             <ul className="list-unstyled text-small">
               <li>
@@ -37,7 +37,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 col-sm-12">
+          <div className="col-md-6 col-sm-12 col-lg">
             <h5 className="fw-bold">Fast Links</h5>
             <ul className="list-unstyled text-small">
               <li>
@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 col-sm-12">
+          <div className="col-md-6 col-sm-12 col-lg">
             <h5 className="fw-bold">Fast Links</h5>
             <ul className="list-unstyled text-small">
               <li>
