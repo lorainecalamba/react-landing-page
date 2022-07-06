@@ -9,8 +9,17 @@ import Table from "../components/UI/Table";
 
 import updateBanner from "../assets/img/update.png";
 
+// * fontawesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFileCode,
+  faFilePdf,
+  faFileWord,
+  faFileExcel,
+} from "@fortawesome/free-regular-svg-icons";
+
 const TAB_NAMES = ["General", "Client"];
-const TABLE_HEADERS = ["Name", "Action"];
+const TABLE_HEADERS = ["Name"];
 
 const Updates = () => {
   const [activeTab, setActiveTab] = useState(`nav-${TAB_NAMES[0]}-tab`);
@@ -46,11 +55,21 @@ const Updates = () => {
           >
             <Table tableHeaders={TABLE_HEADERS}>
               <tr>
-                <td>Sample 1</td>
                 <td>
-                  <Link to="/" className="btn btn-outline-primary">
-                    View
-                  </Link>
+                  <FontAwesomeIcon icon={faFileExcel} />
+                  <Link to="/"> &nbsp;Update Name</Link>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <FontAwesomeIcon icon={faFileWord} />
+                  <Link to="/"> &nbsp;Update Name</Link>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <FontAwesomeIcon icon={faFilePdf} />
+                  <Link to="/"> &nbsp;Update Name</Link>
                 </td>
               </tr>
             </Table>
